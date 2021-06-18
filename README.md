@@ -65,45 +65,6 @@ rake db:create db:migrate db:seed dev:setup
 
 ----
 
-* **Messages**
-
-    `GET` | `/messages`
-
-    example: `curl '/api/v1/messages' -H 'Authorization: xxx'`
-
-* **Create Message**
-
-  `POST` | `/messages` | `message[title]=string&message[content]=string`
-
-  example: `curl -X POST '/api/v1/messages' -H 'Authorization: xxx' -d 'message[receiver_email]=matheus@email.com&message[title]=APITEST&message[content]=CONTEUDO'`
-
-* **Sent**
-
-    `GET` | `/messages/sent`
-
-    example: `curl '/api/v1/messages/sent' -H 'Authorization: xxx'`
-
-* **Show Message**
-
-  `GET` | `/messages/:id`
-
-  example: `curl '/api/v1/messages/1' -H 'Authorization: xxx'`
-
-  OR `curl '/api/v1/messages/1' -H 'Authorization: xxx'`
-
-* **Show Profile**
-
-`GET` | `/profile`
-
-example: `curl '/api/v1/profile' -H 'Authorization: xxx'`
-
-* **Update Profile**
-
-  `PATCH` | `/profile` | `user[name]=string&user[email]=string&user[password]=string&user[password_confirmation]=string`
-
-  example: `curl -g -X PATCH '/api/v1/profile?user[name]=Mateus' -H 'Authorization: xxx'`
-
-# nior-backend
     
 
 
